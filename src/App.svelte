@@ -2,9 +2,6 @@
   import Header from "./components/Header.svelte";
   import Gallery from "./components/Gallery.svelte";
   import Footer from "./components/Footer.svelte";
-
-  // Ejemplo de imagen usando CDN de Prometeo
-  const prometeoImage = "https://cdn.abonce.dev/prometeo.png";
 </script>
 
 <Header />
