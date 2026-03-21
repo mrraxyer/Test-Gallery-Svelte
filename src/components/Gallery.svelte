@@ -1,7 +1,7 @@
 ﻿<script lang="ts">
     import AccordionItem from "./AccordionItem.svelte";
-    import type { Artwork as DataArtwork } from "../data/artworks";
-    import { artworks as importedArtworks } from "../data/artworks";
+    import type { Artwork as DataArtwork } from "../data/artworks-cdn";
+    import { artworks as importedArtworks } from "../data/artworks-cdn";
 
     let selectedImage: string | null = null;
     let loadedIds = new Set<string | number>();
