@@ -47,7 +47,7 @@
                 </a>
                 <div class="w-px h-10 bg-gray-600" aria-hidden="true"></div>
                 <a
-                    href="https://www.itcelaya.edu.mx"
+                    href="https://celaya.tecnm.mx"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Visitar sitio del Instituto Tecnológico de Celaya"
@@ -68,7 +68,12 @@
             class="border-t border-gray-800 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500"
         >
             <p>
-                Hecho con ❤️ por <strong class="text-gray-300">On Linces</strong
+                Hecho con ❤️ por <strong class="text-gray-300"
+                    ><a
+                        href="https://onlinces.net"
+                        target="_blank"
+                        rel="noopener noreferrer">On Linces</a
+                    ></strong
                 >
             </p>
             <p>
