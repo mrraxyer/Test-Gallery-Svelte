@@ -2,7 +2,13 @@
   import Header from "./components/Header.svelte";
   import Gallery from "./components/Gallery.svelte";
   import Footer from "./components/Footer.svelte";
+  import LogoITC from "./assets/logos/logoITC.webp";
 </script>
+
+<svelte:head>
+  <title>Acervo Cultural del TecNM en Celaya</title>
+  <link rel="icon" href={LogoITC} />
+</svelte:head>
 
 <Header />
 
