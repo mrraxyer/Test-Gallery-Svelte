@@ -113,6 +113,7 @@
 
 <svelte:head>
     {#if artworks[0]}
+        <link rel="preconnect" href="https://cdn.abonce.dev" crossorigin="" />
         <link
             rel="preload"
             as="image"
@@ -189,6 +190,12 @@
                                 src={work.image}
                                 alt={work.title}
                                 class="w-full h-full object-contain object-center shadow-sm"
+                                width="1280"
+                                height="741"
+                                sizes="(max-width: 767px) 100vw, 50vw"
+                                loading="eager"
+                                decoding="async"
+                                fetchpriority="high"
                                 on:load={() => markLoaded(work.id)}
                             />
                         {:else}
@@ -201,6 +208,12 @@
                                 }}
                                 alt={work.title}
                                 class="w-full h-full object-contain object-center shadow-sm"
+                                width="1280"
+                                height="741"
+                                sizes="(max-width: 767px) 100vw, 50vw"
+                                loading="lazy"
+                                decoding="async"
+                                fetchpriority="low"
                                 on:load={() => markLoaded(work.id)}
                             />
                         {/if}
@@ -269,16 +282,16 @@
 
     /* Blur-up / placeholder transition for lazy images */
     :global(.lazy-img) {
-        filter: blur(8px);
+        opacity: 0.2;
         transform: scale(1.01);
         transition:
-            filter 400ms ease,
-            transform 400ms ease;
-        will-change: filter;
+            opacity 280ms ease,
+            transform 280ms ease;
+        will-change: opacity, transform;
     }
 
     :global(.lazy-img.loaded) {
-        filter: blur(0);
+        opacity: 1;
         transform: none;
     }
 

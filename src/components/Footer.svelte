@@ -16,7 +16,7 @@
                     Galería del Acervo Cultural del<br />
                     Tecnológico Nacional de México en Celaya
                 </h3>
-                <p class="text-gray-400 text-sm leading-relaxed max-w-lg">
+                <p class="text-gray-300 text-sm leading-relaxed max-w-lg">
                     Preservando e inspirando el patrimonio cultural de nuestra
                     institución académica. Explora la riqueza artística y
                     cultural que forma parte de la identidad del TecNM en Celaya
@@ -41,8 +41,11 @@
                         src={logoTecNM}
                         alt="Tecnológico Nacional de México"
                         class="h-10 w-auto object-contain"
+                        width="1080"
+                        height="489"
                         loading="lazy"
                         decoding="async"
+                        fetchpriority="low"
                     />
                 </a>
                 <div class="w-px h-10 bg-gray-600" aria-hidden="true"></div>
@@ -57,18 +60,21 @@
                         src={logoITC}
                         alt="Instituto Tecnológico de Celaya"
                         class="h-10 w-auto object-contain"
+                        width="956"
+                        height="1161"
                         loading="lazy"
                         decoding="async"
+                        fetchpriority="low"
                     />
                 </a>
             </nav>
         </div>
 
         <div
-            class="border-t border-gray-800 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500"
+            class="border-t border-gray-800 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-300"
         >
             <p>
-                Hecho con ❤️ por <strong class="text-gray-300"
+                Hecho con ❤️ por <strong class="text-gray-100"
                     ><a
                         href="https://onlinces.net"
                         target="_blank"

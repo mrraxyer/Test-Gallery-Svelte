@@ -23,6 +23,11 @@
                     src={logoTecNM}
                     class="h-8 w-auto"
                     alt="Tecnológico Nacional de México logo"
+                    width="1080"
+                    height="489"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
                 />
             </a>
             <a
@@ -35,6 +40,11 @@
                     src={logoITC}
                     class="h-8 w-auto"
                     alt="Instituto Tecnológico de Celaya logo"
+                    width="956"
+                    height="1161"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
                 />
             </a>
         </nav>
